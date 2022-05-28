@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="/cookie.css">
+</head>
+<body>
+    <h1>Cookie Library</h1>
+    <div class="container"> 
+        <div class="input">
+            <label for="uname"><b>Enter Name</b></label> 
+            <input type="text" id="uname" name="username"  required> 
+        </div>
+        <div class="input">
+            <label for="age"><b>Enter Age</b></label> 
+            <input type="text" id="age" name="age"  required > 
+        </div>
+        
+        <label><b>Select Your Gender</b></label>
+        
+        <div class="input">
+
+            <div class="gender">
+                <label for="male">
+                    <img src="../images/1.jpg" id="1">
+                </label>
+                <input type="radio" id="male" name="gender" value="male" required >
+            </div>
+            <div class="gender">
+                <label for="female">
+                    <img src="../images/2.jpg" id="2">
+                </label>
+                <input type="radio" id="female" name="gender" value="female" required>
+            </div>
+        </div>        
+            <p><b>Select Your Favourite Color</b></p>
+            <select required id="color" >
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+            </select>
+        <div class="btn">
+        <input type="submit" value="submit" onclick="createCookie()" >
+    </div>
+    </div>    
+    <script src="cookie.js"></script>
+</body>
+</html>
